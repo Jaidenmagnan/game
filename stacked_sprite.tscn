@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3ansaxa7qi6s"]
+
+[ext_resource type="Texture2D" uid="uid://bq2gkn2gkwv3q" path="res://assets/CarSlices.png" id="1_o8m3g"]
+[ext_resource type="Script" uid="uid://b13nka38gb377" path="res://stacked_sprite.gd" id="2_13dey"]
+
+[node name="StackedSprite" type="Sprite2D"]
+position = Vector2(-1, 0)
+texture = ExtResource("1_o8m3g")
+hframes = 11
+script = ExtResource("2_13dey")
+_show_sprites = true

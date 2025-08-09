@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7iydvtp3i786"]
+
+[ext_resource type="Script" uid="uid://cwbix1bc6gspa" path="res://Car.gd" id="1_y2uan"]
+[ext_resource type="PackedScene" uid="uid://c3ansaxa7qi6s" path="res://stacked_sprite.tscn" id="2_gvgjh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w13o2"]
+
+[node name="Car" type="CharacterBody2D"]
+position = Vector2(578, 321)
+script = ExtResource("1_y2uan")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_w13o2")
+
+[node name="StackedSprite" parent="." instance=ExtResource("2_gvgjh")]
